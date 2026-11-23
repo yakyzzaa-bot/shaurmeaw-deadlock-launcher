@@ -1,0 +1,7 @@
+[target.x86_64-pc-windows-gnu]
+rustflags = [
+    "-C", "target-cpu=x86-64-v3",
+    "-C", "link-self-contained=yes",
+    "-C", "link-arg=-Wl,--gc-sections",
+    "-C", "link-arg=-Wl,-O1",
+]
